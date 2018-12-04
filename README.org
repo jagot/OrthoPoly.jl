@@ -1,0 +1,23 @@
+#+TITLE: OrthoPoly.jl
+#+AUTHOR: Stefanos Carlström
+#+EMAIL: stefanos.carlstrom@gmail.com
+
+#+PROPERTY: header-args:julia :session *julia-OrthoPoly*
+
+[[https://travis-ci.org/jagot/OrthoPoly.jl][https://travis-ci.org/jagot/OrthoPoly.jl.svg?branch=master]]
+
+Generation of a few of the [[https://en.wikipedia.org/wiki/Orthogonal_polynomials][orthogonal polynomials]].
+
+#+BEGIN_SRC julia :exports none
+  using Pkg
+  Pkg.activate(".")
+#+END_SRC
+
+Example usage:
+#+BEGIN_SRC julia :exports both :results verbatim
+using OrthoPoly
+hermite(5)
+#+END_SRC
+
+#+RESULTS:
+: Poly(120*x - 160*x^3 + 32*x^5)
